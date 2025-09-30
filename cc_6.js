@@ -20,3 +20,16 @@ class Manager extends Employee {
     }
 }
 
+// Step 4
+const employee = [
+    new Employee("Lorelai", "Operations"),
+    new Employee("Rory", "Finance"),
+    new Employee("Lane", "Marketing"),
+    new Employee("Dean", "Operations")
+];
+
+const manager = [
+    new Manager("Emily", "Operations", 10),
+    new Manager("Max", "Finance", 4),
+    new Manager("Gerry", "Marketing", 30)
+];
