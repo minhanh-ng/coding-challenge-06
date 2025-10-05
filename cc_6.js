@@ -1,4 +1,4 @@
-// Step 2
+// Step 2: Create a base class called Employee with the following properties: name, department
 class Employee {
     constructor(name, department) {
         this.name = name;
@@ -9,7 +9,7 @@ class Employee {
     }
 }
 
-// Step 3
+// Step 3: reate a subclass called Manager that extends Employee. Use super() to inherit name and department
 class Manager extends Employee {
     constructor(name, dept, teamSize) {
         super(name, dept)
@@ -20,7 +20,7 @@ class Manager extends Employee {
     }
 }
 
-// Step 4
+// Step 4: Create a few sample employees and managers
 const employee = [
     new Employee("Lorelai", "Operations"),
     new Employee("Rory", "Finance"),
@@ -34,7 +34,7 @@ const manager = [
     new Manager("Gerry", "Marketing", 30)
 ];
 
-// Step 5
+// Step 5: Create a class called Company with a property employees (an array). Add methods
 class Company {
    constructor() {
     this.employee = []
@@ -48,3 +48,10 @@ class Company {
         });
     }
 }
+
+
+// Step 6: Instantiate a Company object, add both employee and manager instances, and call listEmployees().
+const company = new Company();
+employee.forEach(e => company.addEmployee(e));
+manager.forEach(m => company.addEmployee(m));
+company.listEmployees();
