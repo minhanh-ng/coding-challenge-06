@@ -33,3 +33,18 @@ const manager = [
     new Manager("Max", "Finance", 4),
     new Manager("Gerry", "Marketing", 30)
 ];
+
+// Step 5
+class Company {
+   constructor() {
+    this.employee = []
+    }
+    addEmployee(employee) {
+        this.employee.push(employee)
+    }
+    listEmployees() {
+        this.employee.forEach(emp => {
+            console.log(emp.describe())
+        });
+    }
+}
